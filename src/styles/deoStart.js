@@ -8,14 +8,26 @@ export const Header = styled.header`
     justify-content: center;
     align-items: center;
 
+    
     border-bottom: solid 4px #373751;
+    @media (max-width: 1025px) {
+        height: 15vh;
+    }
 `
 
 export const NTLogo = styled.img`
-    width: 20vw;
+    width: 20%;
 
     &:hover {
         cursor: pointer;
+    }
+
+    @media (max-width: 1025px) {
+        width: 40%;
+    }
+
+    @media (max-width: 376px) {
+        width: 50%;
     }
 `
 
@@ -38,6 +50,25 @@ export const ThemeIcon = styled.img`
     &:hover {
         cursor: pointer;
     }
+
+    
+    @media (max-width: 1025px) {
+        width: 3.5%;
+
+        left: -22%
+    }
+
+    @media (max-width: 426px) {
+        width: 4%;
+
+        left: -18%;
+    }
+
+    @media (max-width: 320px) {
+        width: 4.5%;
+
+        left: -16%;
+    }
 `
 
 export const ThemeToggle = styled.img`
@@ -49,6 +80,24 @@ export const ThemeToggle = styled.img`
     &:hover {
         cursor: pointer;
     }
+
+    @media (max-width: 1025px) {
+        width: 3.5%;
+
+        left: -20%
+    }
+
+    @media (max-width: 426px) {
+        width: 4%;
+
+        left: -16%;
+    }
+
+    @media (max-width: 320px) {
+        width: 4.5%;
+
+        left: -14%;
+    }
 `
 
 //
@@ -57,7 +106,7 @@ export const DeoLinks = styled.div`
     width: 55vw;
     height: 62vh;
 
-    margin-top: 9vh;
+    margin-top: 5%;
 
     display: flex;
     flex-direction: column;
@@ -66,10 +115,30 @@ export const DeoLinks = styled.div`
 
     border: solid 5px #373751;
     border-radius: 25px;
+
+    @media (max-width: 1025px) {
+        width: 75vw;
+        height: 50vh;
+
+        margin-top: 20%;
+    }
+
+    @media (max-width: 769px) {
+        height: 55vh;
+    }
+
+    @media (max-width: 426px) {
+        width: 85vw;
+        height: 60vh;
+    }
 `
 
 export const NTimg = styled.img`
-    width: 12vw;
+    width: 20%;
+
+    @media (max-width: 1025px) {
+        width: 25%;
+    }
 `
 
 export const NTtext = styled.p`
@@ -81,6 +150,18 @@ export const NTtext = styled.p`
     &:hover {
         cursor: pointer;
     }
+
+    @media (max-width: 769px) {
+        font-size: 0.9em;
+    }
+
+    @media (max-width: 426px) {
+        font-size: 0.8em;
+    }
+
+    @media (max-width: 320px) {
+        font-size: 0.65em;
+    }
 `
 
 export const LinkBox = styled.div`
@@ -89,6 +170,14 @@ export const LinkBox = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @media (max-width: 1025px) {
+        width: 50vw;
+    }
+
+    @media (max-width: 426px) {
+        width: 70vw;
+    }
 `
 
 export const Link = styled.a`
@@ -112,6 +201,26 @@ export const LinkButton = styled.button`
     &:hover {
         cursor: pointer;        
     }
+
+    @media (max-width: 1025px) {
+        width: 16vw;
+        height: 6vh;
+    }
+
+    @media (max-width: 769px) {
+        width: 18vw;
+        height: 7vh;
+    }
+
+    @media (max-width: 426px) {
+        width: 28vw;
+        height: 7.5vh;
+    }
+
+    @media (max-width: 320px) {
+        width: 30vw;
+        height: 7vh;
+    }
 `
 
 export const ImgButton = styled.img`
@@ -119,6 +228,16 @@ export const ImgButton = styled.img`
 
     position: relative;
     left: -1vw;
+
+    @media (max-width: 426px) {
+        width: 3.5vw;
+
+        left: -2.5vw;
+    }
+
+    @media (max-width: 320px) {
+        width: 4vw;
+    }
 `
 
 export const TextButton = styled.p`
@@ -127,4 +246,20 @@ export const TextButton = styled.p`
     text-align: center;
     font-size: 1.2em;
     font-weight: bold;
+
+    @media (max-width: 769px) {
+        width: 12vw;
+
+        font-size: 1em;
+    }
+
+    @media (max-width: 426px) {
+        font-size: 0.9em;
+    }
+
+    @media (max-width: 320px) {
+        width: 13vw;
+
+        font-size: 0.8em;
+    }
 `
