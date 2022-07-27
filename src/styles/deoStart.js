@@ -19,22 +19,36 @@ export const NTLogo = styled.img`
     }
 `
 
-export const SelectTheme = styled.div`
-    width: 7vw;
-    
+//
+
+export const ThemeBox = styled.div`
+    width: 20%;
+    height: 100%;
+
     display: flex;
     justify-content: space-around;
-
-    position: absolute;
-    left: 3vw;
 `
 
-export const Theme = styled.img`
-    width: 2.2vw;
+export const ThemeIcon = styled.img`
+    width: 2.5%;
+
+    position: relative;
+    left: -30%;
+
+    &:hover {
+        cursor: pointer;
+    }
 `
 
-export const Select = styled.img`
-    width: 2.2vw;
+export const ThemeToggle = styled.img`
+    width: 2.5%;
+
+    position: relative;
+    left: -29%;
+
+    &:hover {
+        cursor: pointer;
+    }
 `
 
 //
@@ -51,7 +65,7 @@ export const DeoLinks = styled.div`
     justify-content: space-around;
 
     border: solid 5px #373751;
-    border-radius: 15px;
+    border-radius: 25px;
 `
 
 export const NTimg = styled.img`
@@ -84,7 +98,7 @@ export const Link = styled.a`
 
 export const LinkButton = styled.button`
     width: 13vw;
-    height: 7vh;
+    height: 8vh;
 
     display: flex;
     justify-content: center;
@@ -93,12 +107,10 @@ export const LinkButton = styled.button`
     color: ${(props) => props.theme.textColor};
     background-color: ${(props) => props.theme.buttonColor};
     border: none;
-    border-radius: 6px;
+    border-radius: 12px;
 
     &:hover {
-        cursor: pointer;
-
-        /* box-shadow: ${(props) => props.theme.boxShadow}; */
+        cursor: pointer;        
     }
 `
 

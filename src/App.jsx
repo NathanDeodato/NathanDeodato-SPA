@@ -5,23 +5,7 @@ import "./App.css"
 import DeoStart from "./components/deoStart"
 
 export default function DeodatontSPA() {
-  const deoNav = () => {
-    return(
-      <Header>
-          <SelectTheme>
-              <Theme 
-              src="{}" 
-              alt="DarkMode Icon"
-              />
-              <Select 
-              src="{}"
-              onClick={() => {switchTheme()}}
-              />
-          </SelectTheme>
-          <NTLogo src={NTterminal}/>
-        </Header>
-    )
-  }
+  console.log("ⓒ NathanDeodato.Dev")
   
   return(
     <div className="divGlobal">
