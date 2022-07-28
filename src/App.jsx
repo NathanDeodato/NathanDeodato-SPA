@@ -2,14 +2,14 @@ import React from "react"
 
 import "./App.css"
 
-import DeoStart from "./components/deoStart"
+import nt from "./components/nt"
 
 export default function DeodatontSPA() {
   console.log("ⓒ NathanDeodato.Dev")
   
   return(
     <div className="divGlobal">
-      <DeoStart/>
+      {nt()}
     </div>
   )
 }

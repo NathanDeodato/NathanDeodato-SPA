@@ -1,23 +1,13 @@
 import React, { useState } from "react"
 
 import { ThemeProvider } from "styled-components"
-import { DarkMode, 
+import { 
+    DarkMode, 
     LightMode 
 } from "../styles/themes"
 
-import { 
-    Header, 
-    NTLogo 
-} from "../styles/deoStart"
-
 import {
-    ThemeBox,
-    ThemeIcon,
-    ThemeToggle
-} from "../styles/deoStart"
-
-import {
-    DeoLinks, 
+    NtLinks, 
     NTimg, 
     NTtext, 
     LinkBox, 
@@ -25,17 +15,16 @@ import {
     LinkButton, 
     ImgButton, 
     TextButton 
-} from "../styles/deoStart"
+} from "../styles/nt"
 
 import { 
-    NTterminal, 
-    themeLight,
-    toggleOn,
     NTBitMoji, 
     gitHub, 
     linkedin, 
     portifolio, 
     onu } from "../assets/assets"
+
+import cHeader from "./header"
 
 export default function DeoStart() {
     const [ myTheme, setMyTheme ] = useState(DarkMode)
@@ -48,28 +37,12 @@ export default function DeoStart() {
         }
     }
 
-    const DeoNav = () => {
-        return(
-            <Header>
-                <ThemeIcon
-                src={themeLight}
-                />
-                <ThemeToggle
-                src={toggleOn}
-                />
-                <NTLogo
-                src={NTterminal}
-                />
-            </Header>
-        )
-    }
-
     return(
         <ThemeProvider 
         theme={myTheme}
         >
-            <DeoNav/>
-            <DeoLinks>
+            {cHeader()}
+            <NtLinks>
                 <NTimg 
                 src={NTBitMoji}/>
                 <Link href="">
@@ -119,7 +92,7 @@ export default function DeoStart() {
                         </LinkButton>
                     </Link>
                 </LinkBox>
-            </DeoLinks>
+            </NtLinks>
         </ThemeProvider>
     )
 }
