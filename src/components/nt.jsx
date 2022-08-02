@@ -12,17 +12,27 @@ import {
     NTtext, 
     LinkBox, 
     Link, 
-    LinkButton, 
-    ImgButton, 
-    TextButton 
+    LinkButton,
+    GitHub,
+    Linkedin,
+    Instagram,
+    MetaBit,
+    NTportfolio,
+    ImgButton,
+    MetaBitIcon,
+    TerminalIcon,
+    TextButton, 
 } from "../styles/nt"
 
 import { 
     NTBitMoji, 
-    gitHub, 
+    gitHub,
     linkedin, 
-    portifolio, 
-    onu } from "../assets/assets"
+    instagram,
+    metaBit,
+    terminal,
+    NTterminal
+} from "../assets/assets"
 
 import cHeader from "./header"
 
@@ -46,49 +56,71 @@ export default function DeoStart() {
                 <NTimg 
                 src={NTBitMoji}/>
                 <Link href="">
-                    <NTtext>@Deodatont.Dev</NTtext>
+                    <NTtext>@NathanDeodato.Dev</NTtext>
                 </Link>
                 <LinkBox>
                     <Link 
                     href="https://github.com/NathanDeodato"
                     >
                         <LinkButton>
-                            <ImgButton 
-                            src={gitHub}
-                            />
-                            <TextButton>GitHub</TextButton>
+                            <GitHub>
+                                <ImgButton 
+                                src={gitHub}
+                                />
+                                <TextButton>GitHub</TextButton>
+                            </GitHub>
                         </LinkButton>
                     </Link>
                     <Link 
                     href=""
                     >
                         <LinkButton>
-                            <ImgButton 
-                            src={portifolio}
-                            />
-                            <TextButton>Portifolio</TextButton>
+                            <Linkedin>
+                                <ImgButton 
+                                src={linkedin}
+                                />
+                                <TextButton>Linkedin</TextButton>
+                            </Linkedin>
                         </LinkButton>
                     </Link>
                 </LinkBox>
                 <LinkBox>
                     <Link 
-                    href="https://www.linkedin.com/in/nathan-deodato-527ab2222/"
+                    href=""
                     >
                         <LinkButton>
-                            <ImgButton 
-                            src={linkedin}
-                            />
-                            <TextButton>Linkedin</TextButton>
+                            <Instagram>
+                                <ImgButton 
+                                src={instagram}
+                                />
+                                <TextButton>Instagram</TextButton>
+                            </Instagram>
                         </LinkButton>
                     </Link>
                     <Link 
-                    href="https://myonu.netlify.app/"
+                    href=""
                     >
                         <LinkButton>
-                            <ImgButton 
-                            src={onu}
-                            />
-                            <TextButton>My Onu</TextButton>
+                            <MetaBit>
+                                <MetaBitIcon
+                                src={metaBit}
+                                />
+                                <TextButton>Blog</TextButton>
+                            </MetaBit>
+                        </LinkButton>
+                    </Link>
+                </LinkBox>
+                <LinkBox>
+                <Link 
+                    href=""
+                    >
+                        <LinkButton>
+                            <NTportfolio>
+                                <TerminalIcon
+                                src={terminal}
+                                />
+                                <TextButton>Nathan Deodato</TextButton>
+                            </NTportfolio>
                         </LinkButton>
                     </Link>
                 </LinkBox>

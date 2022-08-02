@@ -35,27 +35,6 @@ export const ThemeIcon = styled.img`
     }
 `
 
-export const ThemeToggle = styled.img`
-    width: 2.5%;
-    position: relative;
-    left: -29%;
-    &:hover {
-        cursor: pointer;
-    }
-    @media (max-width: 1025px) {
-        width: 3.5%;
-        left: -20%
-    }
-    @media (max-width: 426px) {
-        width: 4%;
-        left: -16%;
-    }
-    @media (max-width: 320px) {
-        width: 4.5%;
-        left: -14%;
-    }
-`
-
 export const NTLogo = styled.img`
     width: 20%;
     &:hover {

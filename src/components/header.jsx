@@ -3,14 +3,12 @@ import React from "react"
 import { 
     Header, 
     NTLogo,
-    ThemeIcon,
-    ThemeToggle
+    ThemeIcon
 } from "../styles/header"
 
 import { 
     NTterminal, 
-    themeLight,
-    toggleOn,
+    themeLight
 } from "../assets/assets"
 
 export default function cHeader() {
@@ -18,9 +16,6 @@ export default function cHeader() {
         <Header>
             <ThemeIcon
             src={themeLight}
-            />
-            <ThemeToggle
-            src={toggleOn}
             />
             <NTLogo
             src={NTterminal}
